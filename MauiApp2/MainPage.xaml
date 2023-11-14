@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <telerik:RadDataForm
+                     x:Name="dataForm"
+                     AutoGenerateItems="False">     
+                <telerik:DataFormRadTextMaskedEditor
+                     PropertyName="CallBackNumber"
+                     AutomationId="phoneMask"
+                     Mask="(000) 000-0000" />
+                <telerik:DataFormRadEntryEditor PropertyName="Comments" />
+            </telerik:RadDataForm>
+           
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
